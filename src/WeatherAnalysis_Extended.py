@@ -26,7 +26,7 @@ st.title("🌦️ Weather Data Dashboard")
 
 
 # %%
-pd.read_csv('C:/Users/RUDRA/Downloads/Kaggle dataset.csv')
+pd.read_csv('"C:\Users\Utkarsh Singh\OneDrive\Pictures\Documents\GitHub\weather-data-analysis\data\Kaggle dataset.csv"')
 
 # %%
 sns.set_style('whitegrid')
@@ -35,7 +35,7 @@ plt.rcParams['font.size'] = 12
 
 # %%
 try:
-    df = pd.read_csv('C:/Users/RUDRA/Downloads/Kaggle dataset.csv')
+    df = pd.read_csv('"C:\Users\Utkarsh Singh\OneDrive\Pictures\Documents\GitHub\weather-data-analysis\data\Kaggle dataset.csv"')
     print("Data loaded successfully!")
 except FileNotFoundError:
     print("Error: File not found. Please ensure the dataset is in the data/ folder.")
@@ -625,7 +625,7 @@ import plotly.express as px
 
 # Load data
 df = pd.read_csv(
-    'C:/Users/RUDRA/Downloads/Kaggle dataset.csv',
+    '"C:\Users\Utkarsh Singh\OneDrive\Pictures\Documents\GitHub\weather-data-analysis\data\Kaggle dataset.csv"',
     parse_dates=['datetime']
 )
 
@@ -671,7 +671,7 @@ st.plotly_chart(fig2)
 import pandas as pd
 
 # Load your data into df_final
-df_final = pd.read_csv('C:/Users/RUDRA/Downloads/Kaggle dataset.csv')  # Replace with your actual data source
+df_final = pd.read_csv('"C:\Users\Utkarsh Singh\OneDrive\Pictures\Documents\GitHub\weather-data-analysis\data\Kaggle dataset.csv"')  # Replace with your actual data source
 
 # Make sure numeric_cols is defined
 numeric_cols = df_final.select_dtypes(include=['number']).columns  # This gets all numeric columns
@@ -684,7 +684,7 @@ st.write(df_final[numeric_cols].describe().round(2))
 import pandas as pd
 
 # Example of creating a dataframe (replace with your actual data source)
-df_final = pd.read_csv('C:/Users/RUDRA/Downloads/Kaggle dataset.csv')  # or any other method to create your dataframe
+df_final = pd.read_csv('C:\Users\Utkarsh Singh\OneDrive\Pictures\Documents\GitHub\weather-data-analysis\data\Kaggle dataset.csv')  # or any other method to create your dataframe
 
 # Then use numeric_cols (make sure this is defined too)
 numeric_cols = df_final.select_dtypes(include=['number']).columns
